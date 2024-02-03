@@ -145,10 +145,23 @@
     <div class="container-fluid mt-3">
       <!-- Tab-Pills -->
       <ul class="nav nav-pills justify-content-center">
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          id="pills-photo-tab"
+          data-target="#pills-photo"
+          data-toggle="pill"
+        >
+          <i
+            class="fa fa-table fa-xs"
+            aria-hidden="true"
+          ></i>
+        </a>
+      </li>
         <li class="nav-item">
           <a
-            class="nav-link active"
-            style="padding: 0.25rem 0.5rem; font-size: 0.875rem"
+            class="nav-link"
             id="pills-feed-tab"
             data-target="#pills-feed"
             data-toggle="pill"
@@ -156,111 +169,16 @@
             <i
               class="fa fa-square fa-xs"
               aria-hidden="true"
-              style="font-size: 0.75rem"
             ></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            style="padding: 0.25rem 0.5rem; font-size: 0.875rem"
-            id="pills-photo-tab"
-            data-target="#pills-photo"
-            data-toggle="pill"
-          >
-            <i
-              class="fa fa-table fa-xs"
-              aria-hidden="true"
-              style="font-size: 0.75rem"
-            ></i>
-          </a>
-        </li>
+          </a>        
       </ul>
 
       <!-- Tab-Panes -->
       <div class="tab-content">
-        <!-- Feed Tab Pane -->
-        <div
-          class="tab-pane fade active show"
-          id="pills-feed"
-          role="tabpanel"
-          aria-labelledby="pills-feed-tab"
-        >
-          <div class="container-fluid g-1 mt-4">
-            <div class="row">
-              <div class="col-md-4"></div>
-              <div class="col-md-4 p-0">
-                <!--First Post-->
-                <div class="border mb-3 bg-light">
-                  <div class="d-flex">
-                    <h6 class="m-0 mt-1 ml-1">My crazy dog Spark</h6>
-                    <p class="ml-auto mr-1"><b>08/26</b></p>
-                  </div>
-                  <div>
-                    <img
-                      src="https://cdn.britannica.com/92/212692-050-D53981F5/labradoodle-dog-stick-running-grass.jpg"
-                      alt="dog photo"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="pb-3">
-                    <p class="m-0 mb-1 mt-1 ml-1"><b>204 Likes</b></p>
-                    <p class="m-0 ml-1">
-                      This is an example of a very good photo that you can post
-                      on Instagram
-                    </p>
-                  </div>
-                </div>
-                <!--Second Post Post-->
-                <div class="border mb-3 bg-light">
-                  <div class="d-flex">
-                    <h6 class="m-0 mt-1 ml-1">The greatness of Croatia</h6>
-                    <p class="ml-auto mr-1"><b>04/09</b></p>
-                  </div>
-                  <div>
-                    <img
-                      src="https://katahillsidehotel.com/site/assets/files/1990/kata-hillside-hotel-phuket-karon-viewpoint-2022-04-03-14-52-28.jpg"
-                      alt="viewpoint"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="pb-3">
-                    <p class="m-0 mb-1 mt-1 ml-1"><b>26985 Likes</b></p>
-                    <p class="m-0 ml-1">
-                      This is an example of a very good photo that you can post
-                      on Instagram
-                    </p>
-                  </div>
-                </div>
-                <div class="border mb-3 bg-light">
-                  <div class="d-flex">
-                    <h6 class="m-0 mt-1 ml-1">Amazing Goal by Cristiano</h6>
-                    <p class="ml-auto mr-1">06/10</p>
-                  </div>
-                  <div>
-                    <img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHJWW7ZnLfKCE0y-CjC0h_oessnjGV63z8hA&usqp=CAU"
-                      alt="scoring"
-                      class="img-fluid w-100"
-                    />
-                  </div>
-                  <div class="pb-3">
-                    <p class="m-0 mb-1 mt-1 ml-1"><b>204 Likes</b></p>
-                    <p class="m-0 ml-1">
-                      This is an example of a very good photo that you can post
-                      on Instagram
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4"></div>
-            </div>
-          </div>
-        </div>
 
         <!-- Photo Tab Pane -->
         <div
-          class="tab-pane fade"
+          class="tab-pane fade active show"
           id="pills-photo"
           role="tabpanel"
           aria-labelledby="pills-photo-tab"
@@ -318,6 +236,86 @@
                   class="img-fluid h-50 mb-2"
                 />
               </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Feed Tab Pane -->
+        <div
+          class="tab-pane fade"
+          id="pills-feed"
+          role="tabpanel"
+          aria-labelledby="pills-feed-tab"
+        >
+          <div class="container-fluid g-1 mt-4">
+            <div class="row">
+              <div class="col-md-4"></div>
+              <div class="col-md-4 p-0">
+                <!--First Post-->
+                <div class="border mb-3 bg-light">
+                  <div class="d-flex">
+                    <h6 class="m-0 mt-1 ml-1">My crazy dog Spark</h6>
+                    <p class="ml-auto mr-1"><b>08/26</b></p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://cdn.britannica.com/92/212692-050-D53981F5/labradoodle-dog-stick-running-grass.jpg"
+                      alt="dog photo"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="pb-3">
+                    <p class="m-0 mb-1 mt-1 ml-1"><b>204 Likes</b></p>
+                    <p class="m-0 ml-1">
+                      This is an example of a very good photo that you can post
+                      on Instagram
+                    </p>
+                  </div>
+                </div>
+                <!--Second Post-->
+                <div class="border mb-3 bg-light">
+                  <div class="d-flex">
+                    <h6 class="m-0 mt-1 ml-1">The greatness of Croatia</h6>
+                    <p class="ml-auto mr-1"><b>04/09</b></p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://katahillsidehotel.com/site/assets/files/1990/kata-hillside-hotel-phuket-karon-viewpoint-2022-04-03-14-52-28.jpg"
+                      alt="viewpoint"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="pb-3">
+                    <p class="m-0 mb-1 mt-1 ml-1"><b>26985 Likes</b></p>
+                    <p class="m-0 ml-1">
+                      This is an example of a very good photo that you can post
+                      on Instagram
+                    </p>
+                  </div>
+                </div>
+                <!--Third Post-->
+                <div class="border mb-3 bg-light">
+                  <div class="d-flex">
+                    <h6 class="m-0 mt-1 ml-1">Amazing Goal by Cristiano</h6>
+                    <p class="ml-auto mr-1">06/10</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHJWW7ZnLfKCE0y-CjC0h_oessnjGV63z8hA&usqp=CAU"
+                      alt="scoring"
+                      class="img-fluid w-100"
+                    />
+                  </div>
+                  <div class="pb-3">
+                    <p class="m-0 mb-1 mt-1 ml-1"><b>204 Likes</b></p>
+                    <p class="m-0 ml-1">
+                      This is an example of a very good photo that you can post
+                      on Instagram
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4"></div>
             </div>
           </div>
         </div>
